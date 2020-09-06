@@ -1,0 +1,34 @@
+<footer class="footer">
+    <div class="container">
+        <a *ngIf="profile.linkedin" [href]="'https://www.linkedin.com/in/'+profile.linkedin" class="footer-icon-link"
+            target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <span class="footer-icon-label">
+                : {{profile.linkedin}}
+            </span> 
+        </a>
+
+        <a *ngIf="profile.github" [href]="'https://github.com/'+profile.github" class="footer-icon-link" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <span class="footer-icon-label">
+                : {{profile.github}}
+            </span>
+        </a>
+
+
+        <a *ngIf="profile.phone" [href]="'tel:'+profile.phone" class="float-right">
+            <i class="fa fa-phone" aria-hidden="true"></i> 
+            <span class="footer-icon-label">
+                {{profile.phone}}
+            </span>
+        </a>
+
+        <a *ngIf="profile.email" [href]="'mailto:'+profile.email" class="float-right footer-icon-link" target="_blank">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span class="footer-icon-label">
+                {{profile.email}}
+            </span>
+        </a>
+    </div>
+
+</footer>

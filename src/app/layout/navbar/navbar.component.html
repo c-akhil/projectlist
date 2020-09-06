@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <i class="fa fa-home" aria-hidden="true"></i>
+    {{projectName}}
+  </a>
+
+  <a *ngIf="profile.resume" class="float-right" target="_blank" [href]="profile.resume">
+    Resume
+  </a>
+
+</nav>

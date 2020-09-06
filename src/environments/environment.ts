@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  projectName:'TechCount',
+  baseUrl: 'http://techcount.in/',
+  profile: {
+    name: 'Akhil',
+    linkedin: 'akhil-c',
+    github: 'c-akhil',
+    resume: 'http://techcount.in/resume.pdf',
+    phone:'+919014392233',
+    email:'akhil.c@hotmail.com',
+  }
 };
 
 /*
